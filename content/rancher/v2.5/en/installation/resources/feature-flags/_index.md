@@ -58,8 +58,7 @@ When you install Rancher, enable the feature you want with a feature flag. The c
 When installing Rancher with a Helm chart, use the `--features` option. In the below example, two features are enabled by passing the feature flag names names in a comma separated list:
 
 ```
-helm install rancher-latest/rancher \
-  --name rancher \
+helm install rancher rancher-latest/rancher \
   --namespace cattle-system \
   --set hostname=rancher.my.org \
   --set 'extraEnv[0].name=CATTLE_FEATURES'

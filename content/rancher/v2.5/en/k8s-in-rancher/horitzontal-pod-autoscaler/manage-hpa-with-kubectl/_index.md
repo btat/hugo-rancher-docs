@@ -139,7 +139,7 @@ For HPA to use custom metrics from Prometheus, package [k8s-prometheus-adapter](
 
 1. Install the `prometheus-adapter` chart, specifying the Prometheus URL and port number.
   ```
-  # helm install --name prometheus-adapter banzai-charts/prometheus-adapter --set prometheus.url="http://prometheus.mycompany.io",prometheus.port="80" --namespace kube-system
+  # helm install prometheus-adapter banzai-charts/prometheus-adapter --set prometheus.url="http://prometheus.mycompany.io",prometheus.port="80" --namespace kube-system
   ```
 
 1. Check that `prometheus-adapter` is running properly. Check the service pod and logs in the `kube-system` namespace.
