@@ -14,6 +14,7 @@ For information on editing cluster membership, go to [this page.]({{<baseurl>}}/
 The cluster configuration options depend on the type of Kubernetes cluster:
 
 - [RKE Cluster Configuration](./rke-config-reference)
+- [RKE2 Cluster Configuration](./rke2-config-reference)
 - [EKS Cluster Configuration](./eks-config-reference)
 - [GKE Cluster Configuration](./gke-config-reference)
 - [AKS Cluster Configuration](./aks-config-reference)
