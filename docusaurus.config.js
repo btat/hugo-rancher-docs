@@ -3,15 +3,33 @@
 module.exports = {
   title: 'Rancher Manager',
   tagline: '',
-  url: 'https://rancher.com/docs/rancher',
-  baseUrl: '/',
+  url: 'https://github.com',
+  baseUrl: '/rancher-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'rancher', // Usually your GitHub org/user name.
+  organizationName: 'btat', // Usually your GitHub org/user name.
   projectName: 'rancher-docs', // Usually your repo name.
   trailingSlash: false,
   themeConfig: {
+    algolia: {
+      // The application ID provided by Algolia
+      appId: '30NEY6C9UY',
+
+      // Public API key: it is safe to commit it
+      apiKey: '8df59222c0ad79fdacb4d45d11e21d2e',
+
+      indexName: 'rm_docusaurus_test',
+
+      // Optional: see doc section below
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+    },
     colorMode: {
       // "light" | "dark"
       defaultMode: "light",
